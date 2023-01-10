@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECB1B1"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textColor="#373333"
+        android:textAlignment="center">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="15dp">
+    <EditText
+        android:id="@+id/et_name"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:backgroundTint="#F8E5E5"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/et_phone"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:backgroundTint="#F8E5E5"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/et_password"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:backgroundTint="#F8E5E5"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="phone"/>
+    <EditText
+        android:id="@+id/et_confirmpass"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:backgroundTint="#F8E5E5"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="text"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="30dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F4CCCC"
+            android:layout_margin="10dp"
+            android:id="@+id/bt_register"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

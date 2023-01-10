@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="30dp"
+    android:background="#F1F0EA"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_device"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Device"
+            android:layout_weight="1"></TextView>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_weight="1"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"></TextView>
+
+</LinearLayout>
